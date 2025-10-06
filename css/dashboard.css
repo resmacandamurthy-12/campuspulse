@@ -1,0 +1,184 @@
+/* General Dashboard Body */
+body {
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(135deg, #0d0d0f, #1b0028);
+  color: #fff;
+  transition: background 0.3s, color 0.3s;
+}
+
+/* Header */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 30px;
+  background: rgba(20,20,35,0.95);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.5);
+}
+
+header h1 {
+  margin: 0;
+  font-size: 1.5rem;
+  color: #b580ff;
+}
+
+.profile-circle img {
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  border: 2px solid #b580ff;
+}
+
+.mode-toggle {
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+/* Main Grid */
+main {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  padding: 20px;
+}
+
+/* Card Style */
+.card {
+  background: rgba(20, 20, 35, 0.95);
+  padding: 20px;
+  border-radius: 16px;
+  box-shadow: 0 0 15px rgba(128,0,255,0.5);
+}
+
+.card h2 {
+  color: #b580ff;
+  margin-top: 0;
+}
+
+.card ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.card ul li, .card p, .card a {
+  color: #fff;
+}
+
+.card a {
+  text-decoration: none;
+  color: #b580ff;
+}
+
+.card a:hover {
+  text-decoration: underline;
+}
+
+/* Attendance Donut */
+.attendance-card .donut {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  border: 10px solid  #b580ff;
+  border-top: 10px solid #2c0033;
+  margin: 10px auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.attendance-card .percentage {
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+
+/* Buttons */
+button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 8px;
+  background: linear-gradient(90deg, #7a00ff, #b580ff);
+  color: #fff;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+button:hover {
+  background: linear-gradient(90deg, #b580ff, #7a00ff);
+}
+
+/* Floating Chatbot */
+.chatbot-btn {
+  position: fixed;
+  bottom: 25px;
+  right: 25px;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background: #b580ff;
+  color: #fff;
+  font-size: 1.5rem;
+  border: none;
+  cursor: pointer;
+  box-shadow: 0 0 15px rgba(128,0,255,0.5);
+}
+/* Light Mode Styles */
+body.light-mode {
+  background: #f9f9ff; /* very light background */
+  color: #222;
+}
+
+body.light-mode header {
+  background: #ffffff;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+body.light-mode header h1 {
+  color: #6a00ff;
+}
+
+body.light-mode .card {
+  background: #ffffff;
+  color: #222;
+  box-shadow: 0 0 15px rgba(128, 0, 255, 0.15);
+}
+
+body.light-mode .card h2 {
+  color: #6a00ff;
+}
+
+body.light-mode .card a {
+  color: #6a00ff;
+}
+
+body.light-mode button {
+  background: linear-gradient(90deg, #7a00ff, #b580ff);
+  color: #fff;
+}
+
+body.light-mode button:hover {
+  background: linear-gradient(90deg, #b580ff, #7a00ff);
+}
+
+body.light-mode .attendance-card .donut {
+  border: 10px solid #e0e0e0;
+  border-top: 10px solid #6a00ff;
+}
+
+body.light-mode .attendance-card .percentage {
+  color: #222;
+}
+
+body.light-mode .profile-circle img {
+  border: 2px solid #6a00ff;
+}
+
+body.light-mode .chatbot-btn {
+  background: #6a00ff;
+  color: #fff;
+  box-shadow: 0 0 15px rgba(128,0,255,0.15);
+}
+

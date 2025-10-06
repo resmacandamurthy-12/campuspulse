@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SASTRA SmartSpace - Dashboard</title>
+  <link rel="stylesheet" href="css/dashboard.css">
+</head>
+<body>
+  <header>
+    <div class="header-left">
+      <div class="mode-toggle" id="modeToggle">🌙</div>
+    </div>
+    <div class="header-center">
+      <h1>SASTRA SmartSpace</h1>
+    </div>
+    <div class="header-right">
+      <div class="profile-circle" id="profileCircle">
+        <img src="./assets/profile/res.jpg" alt="Profile">
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- Attendance -->
+    <section class="card attendance-card">
+      <h2>Attendance</h2>
+      <div class="donut" id="attendanceDonut">
+        <div class="percentage" id="attendancePercentage">0%</div>
+      </div>
+      <p><a href="#">View Details</a></p>
+    </section>
+
+    <!-- Study Materials -->
+    <section class="card" id="studyMaterialsCard">
+      <h2>Study Materials</h2>
+      <ul id="studyMaterialsList">
+        <!-- JS will populate links -->
+      </ul>
+    </section>
+
+    <!-- Clubs -->
+    <section class="card" id="clubsCard">
+      <h2>Clubs</h2>
+    </section>
+
+    <!-- Campus Map -->
+    <section class="card" id="campusMapCard">
+      <h2>Campus Map</h2>
+      <button id="openMapBtn">Open Map</button>
+    </section>
+
+    <!-- Internal Marks -->
+    <section class="card" id="internalMarksCard">
+      <h2>Internal Marks</h2>
+      <p>Yet to update</p>
+    </section>
+  </main>
+
+  <!-- Floating Chatbot -->
+  <button class="chatbot-btn" id="chatbotBtn">💬</button>
+
+  <script src="js/dashboard.js"></script>
+</body>
+</html>
